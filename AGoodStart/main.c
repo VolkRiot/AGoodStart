@@ -7,15 +7,35 @@
 //
 
 #include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+float remainingAngle(float angle1, float angle2)
+{
+    float totalAngles = 180.0;
+    return totalAngles - angle1 - angle2;
+}
+
+void congratsStudent(char *student, char *course, int numDays)
+{
+    printf("%s has done as much %s programming as i can fit into %d days.\n", student, course, numDays);
+}
+
+float farenheightFromCelcius(float cel)
+{
+    float far = cel * 1.8 + 32.0;
+    printf("%f celcius is %f farenheit", cel, far);
+    return far;
+}
 
 int main(int argc, const char * argv[]) {
-    float num1 = 3.14;
-    float num2 = 1.445;
-    
-    double sum = num1 + num2;
-    
-    printf("The sum of the two numbers is stored in a double as %f.\n", sum);
+//    congratsStudent("Mik", "Python", 5);
+//    sleep(2);
+//    congratsStudent("Mik", "Python", 5);
     
     
-    return 0;
+    
+    return EXIT_SUCCESS;
 }
+
+
