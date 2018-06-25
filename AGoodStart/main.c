@@ -28,10 +28,21 @@ float farenheightFromCelcius(float cel)
     return far;
 }
 
+void squared(int first)
+{
+    int squared = first * first;
+//    char *string;
+    
+    printf("\"%d\" squared is \"%d\"\n", first, squared);
+    
+}
+
 int main(int argc, const char * argv[]) {
 //    congratsStudent("Mik", "Python", 5);
 //    sleep(2);
 //    congratsStudent("Mik", "Python", 5);
+    
+    squared(5);
     
     
     
