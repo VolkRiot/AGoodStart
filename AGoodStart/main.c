@@ -37,12 +37,22 @@ void squared(int first)
     
 }
 
+void do_while_loop()
+{
+    int i = 0;
+    do {
+        printf("%d. Misha is Cool\n", i);
+        i++;
+    } while (i < 12);
+}
+
 int main(int argc, const char * argv[]) {
 //    congratsStudent("Mik", "Python", 5);
 //    sleep(2);
 //    congratsStudent("Mik", "Python", 5);
     
     squared(5);
+    do_while_loop();
     
     
     
