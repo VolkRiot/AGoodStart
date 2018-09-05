@@ -6,11 +6,13 @@
 //  Copyright © 2018 Mikhail Metrikin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
+#import <readline/readline.h>
+#import <stdio.h>
+#import <stdlib.h>
 
-void countDown()
+void countDown(int count)
 {
-    int count = 99;
     do {
         if (count % 5 == 0) {
             printf("Found one!\n");
@@ -23,6 +25,10 @@ void countDown()
 }
 
 int main(int argc, const char * argv[]) {
-    countDown();
+    printf("Where should i start counting?\n");
+    char *input = readline(NULL);
+    int count = atoi(input);
+    
+    countDown(count);
     return 0;
 }
